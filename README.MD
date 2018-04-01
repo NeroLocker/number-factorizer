@@ -4,7 +4,7 @@ Client-server application for decomposing numbers into prime factors
 
 ## Установка
 
-Запуск приложения на Windows 10. Крайне желательно распаковать приложение в корень диска, например, путь может быть: "C:\number_factorizer\"
+Запуск приложения на Windows 10. Крайне желательно установить приложение в корень диска, например, путь может быть: "C:\number_factorizer\" во избежание ошибок.
 
 ### Python
 
