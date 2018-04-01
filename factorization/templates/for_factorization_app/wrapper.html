@@ -1,0 +1,81 @@
+<!-- Main wrapper for all pages -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+        font-family: sans-serif;
+        }
+
+        .header-block {
+        /* Color of element*/
+        color: white;
+        font-size: large;
+
+        /* Configure border of element */
+        width: 99%;
+        padding: 10px;
+        border-radius: 3px;
+
+        /* Change background parameters */
+        background: rgba(0, 0, 0, 0.9);
+        background: linear-gradient(to bottom left, #000000, #2C2C2C);
+        }
+
+        .footer {
+        position: fixed;
+        left: 0; bottom: 0;
+        padding: 10px;
+        background: #3A4DAE;
+        color: #fff;
+        width: 100%;
+        }
+
+        .answer-block {
+        font-size: 28pt;
+        margin: 1%;
+        }
+
+        #footer-link {
+        color: white;
+        }
+
+        h2 {
+        margin: 1%;
+        }
+
+        a {
+        color: #2963FF;
+        margin: 1%;
+        }
+
+        .input-block {
+        margin: 1%;
+        }
+
+        p {
+        margin: 1%;
+        }
+    </style>
+
+	<meta charset="utf-8">
+	<title>Webmath</title>
+</head>
+<body>
+
+    <div class="header-block">
+        <h1>Webmath application</h1>
+    </div>
+
+    <!-- Code part to be built in-->
+	{% block content %}
+	{% endblock %}
+
+    <!-- Bottom part of site -->
+    <div class="footer">
+        <a href="/" id="footer-link">Main page</a>
+    </div>
+
+</body>
+</html>

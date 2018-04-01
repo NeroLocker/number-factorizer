@@ -1,0 +1,19 @@
+{% extends "for_factorization_app\\wrapper.html" %}
+
+<!-- Code part to be built in -->
+<!-- {% csrf_token %} is mandatory parameter for safe sending -->
+{% block content %}
+
+<h2>Number factorizer</h2>
+<p>Decompose your number into prime factors</p>
+<form action="/answer/" method="post">{% csrf_token %}
+
+        <div class="input-block">
+        <label for="user_value">Enter number: </label>
+        <input id="user_value" type="text" name="user_value" value="{{ current_value }}">
+        <input type="submit" value="Send">
+        </div>
+
+</form>
+
+{% endblock %}

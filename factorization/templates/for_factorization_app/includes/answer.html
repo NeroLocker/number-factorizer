@@ -1,0 +1,14 @@
+{% extends "for_factorization_app\\wrapper.html" %}
+
+<!-- Code part to be built in -->
+{% block content %}
+
+    <div class="answer-block">
+    {% for element in answer_key %}
+    {{ element }}
+    {% endfor %}
+    </div>
+
+    <a href="/factorization/">Enter another number</a>
+
+{% endblock %}
